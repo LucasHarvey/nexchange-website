@@ -1,0 +1,108 @@
+
+.main>div>img{
+  width: 100%;
+  height: auto;
+}
+
+.imageContainer {
+  height: 70%;
+  min-height: 400px;
+  padding: 0px!important;
+
+  background-image: url("../images/home_background_OPTION 7.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imageOverlay {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  max-width: 60%;
+
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#imageOverlay>h1 {
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+#imageOverlay>p {
+  text-align: center;
+  display: inline-block;
+  z-index: 2;
+  width: 65%;
+  font-size: 150%;
+}
+
+.info-button {
+    padding: 10px;
+    border: none;
+    background-color: #3e5274;
+    color: white;
+    border-radius: 2px;
+    font-size: 1.2em;
+    margin: 13px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+}
+
+/* Eventually redirect to mobile site (content will be different on home page) */
+@media only screen and (max-width: 700px) {
+
+  .imageContainer {
+    height: 40%!important;
+  }
+
+  #imageOverlay {
+    max-width: 65%;
+  }
+
+  #imageOverlay>h1 {
+    font-size: 1.1em!important;
+    width: 100%!important;
+  }
+
+  #imageOverlay>p {
+    font-size: 1em!important;
+  }
+
+  .info-button {
+    font-size: 1em!important;
+    width: 100px!important;
+    height: 18px!important;
+    line-height: 18px!important;
+    margin: 5px;
+    padding: 8px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .imageContainer {
+    height: 46%!important;
+    min-height: 305px!important;
+  }
+}
+
+
+@media only screen and (max-width: 450px) and (min-height: 750px) {
+  .imageContainer {
+    height: 27%!important;
+  }
+}
