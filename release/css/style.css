@@ -57,6 +57,10 @@ button, .button {
   background-color: #6a84af;
 }
 
+.load {
+    cursor: wait;
+}
+
 body>header {
   background-color: #3e5274;
   font-family: 'Open Sans', sans-serif;

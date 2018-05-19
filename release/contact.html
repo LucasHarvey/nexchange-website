@@ -5,7 +5,14 @@
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="stylesheet" type="text/css" href="./css/contact.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <script src="./polyfills/flexibility.js"></script>
+
+  <script src="./js/polyfills/flexibility.js"></script>
+  <script async type="text/javascript" src="js/MessageCode.js"></script>
+  <script async type="text/javascript" src="js/Resources.js"></script>
+  <script async type="text/javascript" src="js/app.js"></script>
+  <script async type="text/javascript" src="js/contact.js"></script>
+  <script async type="text/javascript" src="js/modal.js"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#3e5274"/>
@@ -29,26 +36,26 @@
       <form id="request" class="userform">
           <div class="userfield">
             <label for="firstName">First Name: </label>
-            <input type="text" id="firstName" name="firstName">
+            <input type="text" id="firstName" name="firstName" maxlength="40" required>
           </div>
           <div class="userfield">
             <label for="lastName">Last Name: </label>
-            <input type="text" id="lastName" name="lastName">
+            <input type="text" id="lastName" name="lastName"  maxlength="60" required>
           </div>
           <div class="userfield">
             <label for="email">Email Address: </label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email"  maxlength="255" required>
           </div>
           <div class="userfield">
             <label for="subject">Subject: </label>
-            <input type="text" id="subject" name="subject">
+            <input type="text" id="subject" name="subject"  maxlength="255" required>
           </div>
           <div class="userfield">
             <label for="message">Message: </label>
-            <textarea id="message" name="message"></textarea>
+            <textarea id="message" name="message"  maxlength="500" required></textarea>
           </div>
           <div class="userfield">
-            <input class="button" type="submit" id="submit" name="submit" value="Send">
+            <input class="button" type="submit" id="submitRequest" name="submit" value="Send">
           </div>
 
       </div>
