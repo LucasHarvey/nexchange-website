@@ -1,44 +1,57 @@
 .userform {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-top: 30px;
+  width: 80%;
+  margin-top: 30px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .userfield {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  margin: 10px;
 
-    margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 
-    flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .userfield>label {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-preferred-size: 0px;
-        flex-basis: 0px;
-    max-width: 170px;
-    text-align: left;
-    white-space: nowrap;
+  max-width: 170px;
+  text-align: left;
+  white-space: nowrap;
+
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+
+  -ms-flex-preferred-size: 0px;
+      flex-basis: 0px;
 }
 
 .userfield>* {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 220px;
-            flex: 1 220px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 220px;
+          flex: 1 220px;
 }
 
 textarea {
