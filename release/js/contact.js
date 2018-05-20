@@ -10,7 +10,7 @@ app.contact = {
 
         // Enable the form
         document.getElementById("submitRequest").disabled = false;
-        document.getElementById('userForm').addEventListener('submit', app.contact.sendRequest);
+        document.getElementById('userData').addEventListener('submit', app.contact.sendRequest);
 
         new Modal("Message Sent", MessageCode[data.payload.messageCode],
         {text: "Okay"},
@@ -22,7 +22,7 @@ app.contact = {
 
         // Enable the form
         document.getElementById("sendRequest").disabled = false;
-        document.getElementById('userForm').addEventListener('submit', app.contact.sendRequest);
+        document.getElementById('userData').addEventListener('submit', app.contact.sendRequest);
 
         app.handleFailure(data);
         return;
@@ -101,7 +101,7 @@ app.contact = {
 
         // Disable the form
         document.getElementById("submitRequest").disabled = true;
-        document.getElementById('userForm').removeEventListener('submit', app.contact.sendRequest);
+        document.getElementById('userData').removeEventListener('submit', app.contact.sendRequest);
 
         Resources.Contact.POST(firstName, lastName, email, subject, message, this.requestSuccess, this.requestFailure);
     },
@@ -110,5 +110,5 @@ app.contact = {
 
 app.startup.push(function contactStartup() {
     app.contact.sendRequest = app.contact.sendRequest.bind(app.contact);
-    document.getElementById('userForm').addEventListener('submit', app.contact.sendRequest);
+    document.getElementById('userData').addEventListener('submit', app.contact.sendRequest);
 });

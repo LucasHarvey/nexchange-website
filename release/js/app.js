@@ -15,7 +15,6 @@ app.start = function() {
         try {
             app.startup[i].call(app);
         } catch (e) {
-            app.logUi("Pre-startup error: : "+e.message);
             app.handleFailure({
                 status: 500,
                 messageCode: "StartupError"
@@ -27,7 +26,6 @@ app.start = function() {
         try {
             app.afterStartup[i].call(app);
         } catch (e) {
-            app.logUi("Startup error: "+e.message);
             app.handleFailure({
                 status: 500,
                 messageCode: "StartupError"
@@ -226,18 +224,10 @@ app._processBlobResponse = function(response, callback) {
     reader.readAsText(response);
 };
 
-app.logUi = function(message){
-    console.log("UILog: "+message);
-    if(Resources && Resources.Log){
-        Resources.Log.POST(message);
-    }
-}
-
 app._getResponse = function(responseBody) {
     try {
         return JSON.parse(responseBody);
     } catch (e) {
-        app.logUi("Cannot parse JSON: "+e.message);
         app.handleFailure({
             status: 500,
             messageCode: "JSONParseException"
