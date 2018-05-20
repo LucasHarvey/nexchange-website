@@ -1,4 +1,4 @@
-use nexchange-website;
+use nexchangeinfosite;
 
 -- DROP EVERYTHING
 SET FOREIGN_KEY_CHECKS = 0;

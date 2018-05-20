@@ -9,7 +9,7 @@ function database_connect(){
     $username = "root";
     $password = THE_PASSWORD;
     $dbport = "3306";
-    $database = "nexchange-website";
+    $database = "nexchangeinfosite";
 
     try{
         $dbh = new mysqli($servername, $username, $password, $database, $dbport);
