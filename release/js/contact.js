@@ -47,7 +47,7 @@ app.contact = {
     sendRequest: function(event) {
         event.preventDefault();
 
-        if (!app.settings.validateEmail()) {
+        if (!app.contact.validateEmail()) {
             return;
         }
 
