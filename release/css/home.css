@@ -69,6 +69,10 @@
   line-height: 35px;
 }
 
+.info-button:hover {
+  background-color: #5975a6;
+}
+
 /* Mobile-friendly */
 @media only screen and (max-width: 700px) {
 
