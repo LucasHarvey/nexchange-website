@@ -21,7 +21,7 @@ app.contact = {
     requestFailure: function(data) {
 
         // Enable the form
-        document.getElementById("sendRequest").disabled = false;
+        document.getElementById("submitRequest").disabled = false;
         document.getElementById('userData').addEventListener('submit', app.contact.sendRequest);
 
         app.handleFailure(data);
