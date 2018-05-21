@@ -18,3 +18,7 @@ CREATE TABLE messages (
 
     PRIMARY KEY (id)
 );
+
+CREATE TRIGGER before_insert_on_messages
+    BEFORE INSERT ON messages
+    FOR EACH ROW SET new.id = uuid();

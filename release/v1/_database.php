@@ -7,7 +7,7 @@ function database_connect(){
 
     $servername = "localhost";
     $username = "root";
-    $password = THE_PASSWORD;
+    $password = "";
     $dbport = "3306";
     $database = "nexchangeinfosite";
 

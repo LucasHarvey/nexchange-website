@@ -20,11 +20,9 @@ function MessageCode(code){
         NameNotValid: "The name is not valid",
         MissingArgumentEmail: "Email was left empty.",
         EmailNotValid: "The email address is not valid.",
-        MissingArgumentSubject: "Subject was left empty",
-        MissingArgumentMessage: "Message was left empty",
-
-        RequestSent: "The message was sent successfully",
-
+        MissingArgumentSubject: "Subject was left empty.",
+        MissingArgumentMessage: "Message was left empty.",
+        InfoRequestSent: "The message was sent successfully.",
 
         DatabaseError: "Error executing query...",
         DatabasePrepError: "Error preparing database query...",

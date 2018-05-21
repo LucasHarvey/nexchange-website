@@ -12,10 +12,14 @@ app.contact = {
         document.getElementById("submitRequest").disabled = false;
         document.getElementById('userData').addEventListener('submit', app.contact.sendRequest);
 
-        new Modal("Message Sent", MessageCode[data.payload.messageCode],
-        {text: "Okay"},
-        false,
-        null).show();
+        new Modal("Message Sent", MessageCode(data.payload.messageCode), null, null,
+        "Okay").show();
+
+        document.getElementById("firstName").value = "";
+        document.getElementById("lastName").value = "";
+        document.getElementById('email').value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("message").value = "";
     },
 
     requestFailure: function(data) {

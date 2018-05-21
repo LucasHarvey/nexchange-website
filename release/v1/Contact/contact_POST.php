@@ -17,7 +17,7 @@ validateName($first_name . ' ' . $last_name);
 
 $insertParams = array($first_name, $last_name, $email, $subject, $message, $ip);
 
-database_insert($conn, "INSERT INTO messages (first_name, last_name, email, subject, message, ip_address) VALUES (?,?,?,?,?)", "sssss", $insertParams);
+database_insert($conn, "INSERT INTO messages (first_name, last_name, email, subject, message, ip_address) VALUES (?,?,?,?,?,?)", "ssssss", $insertParams);
 
 include_once("./_EMAIL_TASKS/notify_request_task.php");
 $emailSent = request_email($conn, $first_name, $last_name, $email, $subject, $message);
@@ -26,7 +26,7 @@ echoSuccess($conn, array(
     "emailSent" => $emailSent,
     "firstName" => $first_name,
     "lastName" => $last_name,
-    "messageCode" => "RequestSent"
+    "messageCode" => "InfoRequestSent"
 ), 201);
 
 function validateEmail($email){
