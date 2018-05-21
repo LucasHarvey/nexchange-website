@@ -35,13 +35,13 @@
 
 .userfield>* {
   -webkit-box-flex: 1;
-      -ms-flex: 1 220px;
-          flex: 1 220px;
+      -ms-flex: 1 200px;
+          flex: 1 200px;
 
   margin: 3px 5px;
 }
 
 textarea {
   resize: none;
-  min-height: 100px;
+  min-height: 175px;
 }
