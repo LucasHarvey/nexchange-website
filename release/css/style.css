@@ -270,6 +270,11 @@ body>footer>a>img{
     font-size: 1em!important;
   }
 
+  h1, h2 {
+    font-size: 1.1em!important;
+  }
+
+
   .button {
     font-size: 1em!important;
   }

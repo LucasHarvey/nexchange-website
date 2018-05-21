@@ -18,7 +18,7 @@
   top: 150px;
   left: 0;
   right: 0;
-  max-width: 60%;
+  max-width: 55%;
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -87,10 +87,12 @@
   #imageOverlay>h1 {
     font-size: 1.1em!important;
     width: 100%!important;
+    margin: 5px!important;
   }
 
   #imageOverlay>p {
     font-size: 1em!important;
+    margin: 8px!important;
   }
 
   .info-button {

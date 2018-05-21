@@ -35,24 +35,17 @@
       <p>To obtain additional information about the Nexchange software or to request a quote, please fill out the form below and we will get back to you shortly.</p>
       <form class="userform" id="userData">
           <div class="userfield">
-            <label for="firstName">First Name: </label>
-            <input type="text" id="firstName" name="firstName" maxlength="40" required>
+            <input type="text" id="firstName" name="firstName" maxlength="40" placeholder="First Name" required>
+            <input type="text" id="lastName" name="lastName"  maxlength="60" placeholder="Last Name" required>
           </div>
           <div class="userfield">
-            <label for="lastName">Last Name: </label>
-            <input type="text" id="lastName" name="lastName"  maxlength="60" required>
+            <input type="email" id="email" name="email"  maxlength="255" placeholder="Email" required>
           </div>
           <div class="userfield">
-            <label for="email">Email Address: </label>
-            <input type="email" id="email" name="email"  maxlength="255" required>
+            <input type="text" id="subject" name="subject"  maxlength="255" placeholder="Subject" required>
           </div>
           <div class="userfield">
-            <label for="subject">Subject: </label>
-            <input type="text" id="subject" name="subject"  maxlength="255" required>
-          </div>
-          <div class="userfield">
-            <label for="message">Message: </label>
-            <textarea id="message" name="message"  maxlength="500" required></textarea>
+            <textarea id="message" name="message"  maxlength="500" placeholder="Message" required></textarea>
           </div>
           <div class="userfield">
             <input class="button" type="submit" id="submitRequest" name="submit" value="Send">

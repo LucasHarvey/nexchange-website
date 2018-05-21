@@ -1,5 +1,6 @@
 .userform {
-  width: 80%;
+  width: 70%;
+  min-width: 300px;
   margin-top: 30px;
 
   display: -webkit-box;
@@ -32,26 +33,12 @@
       flex-wrap: wrap;
 }
 
-.userfield>label {
-  max-width: 170px;
-  text-align: left;
-  white-space: nowrap;
-
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-
-  -ms-flex-preferred-size: 0px;
-      flex-basis: 0px;
-}
-
 .userfield>* {
   -webkit-box-flex: 1;
       -ms-flex: 1 220px;
           flex: 1 220px;
+
+  margin: 3px 5px;
 }
 
 textarea {
