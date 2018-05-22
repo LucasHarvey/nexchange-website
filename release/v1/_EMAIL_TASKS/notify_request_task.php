@@ -8,7 +8,7 @@ function request_email($conn, $firstName, $lastName, $email, $subject, $message)
 
     $to = "lucas.harvey10@gmail.com";
 
-    return send_email($conn, $to, htmlentities($subject), htmlentities($emailMessage), true);
+    return send_email($conn, $to, htmlentities($subject, ENT_QUOTES), htmlentities($emailMessage, ENT_QUOTES), true);
 }
 
 ?>
