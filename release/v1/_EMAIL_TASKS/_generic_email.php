@@ -1,10 +1,18 @@
 <?php
-function send_email($conn, $to, $subject, $message){
+function send_email($conn, $to, $subject, $message, $async=false){
     $headers = "From: no-reply.nexchange@johnabbott.qc.ca\r\nContent-type: text/plain\r\n";
 
-    if(mail($to, $subject, $message, $headers)){
-        return true;
+    if(!$async){
+      if(mail($to, $subject, $message, $headers)){
+          return true;
+      }
+      return false;
+    } else {
+      execInBackground("php _EMAIL_TASKS/_background_email.php $to '$subject' '$message'");
     }
-    return false;
+}
+
+function execInBackground($cmd) {
+    exec($cmd . " > /dev/null &");
 }
 ?>
