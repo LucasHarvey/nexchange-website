@@ -73,6 +73,11 @@
   background-color: #5975a6;
 }
 
+.line {
+  width: 150px;
+  border-top: 1px solid #3e5274;
+}
+
 /* Mobile-friendly */
 @media only screen and (max-width: 700px) {
 
@@ -108,12 +113,13 @@
 @media only screen and (max-width: 450px) {
   .imageContainer {
     height: 46%!important;
-    min-height: 305px!important;
+    min-height: 290px!important;
   }
 }
 
 @media only screen and (max-width: 450px) and (min-height: 750px) {
   .imageContainer {
     height: 27%!important;
+    min-height: 280px!important;
   }
 }
