@@ -4,8 +4,8 @@
 }
 
 .imageContainer {
-  height: 70%;
-  min-height: 400px;
+  height: 80%;
+  min-height: 480px;
   padding: 0px!important;
   background-image: url("../images/home_background_OPTION 7.png");
   background-position:center;
@@ -18,7 +18,8 @@
   top: 150px;
   left: 0;
   right: 0;
-  max-width: 55%;
+  width: 70%;
+  max-width: 500px;
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
@@ -49,7 +50,7 @@
   text-align: center;
   display: inline-block;
   z-index: 2;
-  width: 65%;
+  width: 75%;
   font-size: 150%;
 }
 
@@ -79,6 +80,7 @@
 }
 
 /* Mobile-friendly */
+
 @media only screen and (max-width: 700px) {
 
   .imageContainer {
@@ -86,6 +88,7 @@
   }
 
   #imageOverlay {
+    top: 200px;
     max-width: 65%;
   }
 
