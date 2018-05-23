@@ -45,7 +45,7 @@ app.contact = {
     },
 
     verifyName: function(name) {
-        return (/^[A-Za-z\-\s]+$/g.test(name));
+        return (/^[A-Za-z'\-\s]+$/g.test(name));
     },
 
     sendRequest: function(event) {
