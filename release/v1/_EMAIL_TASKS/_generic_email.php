@@ -8,7 +8,7 @@ function send_email($conn, $to, $subject, $message, $async=false){
       }
       return false;
     } else {
-      execInBackground("php _EMAIL_TASKS/_background_email.php $to $subject $message");
+      execInBackground("php _EMAIL_TASKS/_background_email.php $to '$subject' '$message'");
     }
 }
 
