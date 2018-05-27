@@ -5,6 +5,8 @@ SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS messages;
 SET FOREIGN_KEY_CHECKS = 1;
 
+DROP TRIGGER IF EXISTS before_insert_on_messages;
+
 -- Create the tables
 CREATE TABLE messages (
     id CHAR(36) NOT NULL,
