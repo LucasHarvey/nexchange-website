@@ -5,7 +5,7 @@
 
 .imageContainer {
   height: 80%;
-  min-height: 600px;
+  min-height: 650px;
   padding: 0px!important;
   background-image: url("../images/home_background_OPTION 7.png");
   background-position:center;
@@ -81,7 +81,7 @@
 
 /* Mobile-friendly */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
 
   .imageContainer {
     min-height: 500px;
